@@ -103,8 +103,10 @@ public class Semana3 {
         for (int i=0; i<cantidad; i++){
             for (int j=0; j<n; j++){
                 if (notas[i][3] >=8 && notas[i][3]<=10){
+                    System.out.println("************CALIFICACIONES MAS ALTAS************");
                     System.out.println("Alumnos con calificación mas alta: "+alumnos[i][j]+" Promedio: "+notas[i][3]);
                 }else if (notas[i][3] >=0 && notas[i][3]<=4){
+                    System.out.println("************CALIFICACIONES MAS BAJAS************");
                     System.out.println("Alumnos con calificación mas baja: "+alumnos[i][j]+" Promedio: "+notas[i][3]);
                 }
             }          
