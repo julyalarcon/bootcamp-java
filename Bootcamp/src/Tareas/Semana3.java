@@ -37,8 +37,6 @@ public class Semana3 {
         }
         int[][] notas = new int[cantidad][4];
         for (i = 0; i <cantidad; i++) {
-            System.out.println(" Ingresa la cantidad de examenes: ");
-
             do {
                 System.out.print("Alumno: " + alumnos[i][0] + " " + alumnos[i][1] + " Ingresa la nota 1: ");
                 notas[i][0] = new Scanner(System.in).nextInt();
