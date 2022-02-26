@@ -35,7 +35,7 @@ public class Semana3 {
             alumnos[i][1] = new Scanner(System.in).nextLine();
             numero++;
         }
-        int[][] notas = new int[cantidad][4];
+        int[][] notas = new int[cantidad][8];
         for (i = 0; i <cantidad; i++) {
             do {
                 System.out.print("Alumno: " + alumnos[i][0] + " " + alumnos[i][1] + " Ingresa la nota 1: ");
@@ -80,25 +80,45 @@ public class Semana3 {
             } while (notas[i][2] < 0 || notas[i][2] > 10);
 
             notas[i][3] = (notas[i][0] + notas[i][1] + notas[i][2]) / 3;
-
         }
-        for (i  = 0;i< cantidad ;i++) {
-                System.out.println("************REPORTE CONTROL NOTAS ALUMNOS************");
-            System.out.println(" " + alumnos[i][0] + " " + alumnos[i][1] + " Nota 1: " + (notas[i][0]) + " Nota 2: " + (notas[i][1]) + " Nota 3: " + (notas[i][2]) + " Promedio: " + (notas[i][3]));
-            if (notas[i][3] >= 7 && notas[i][3] <= 10) {
-                System.out.println("ALUMOS APROBADOS: " + (alumnos[i][0] + " " + alumnos[i][1]) + " Promedio: " + notas[i][3]);
-            } else if (notas[i][3] >= 0 && notas[i][3] < 7) {
-                System.out.println("ALUMNOS REPROBADOS: " + (alumnos[i][0] + " " + alumnos[i][1]) + " Promedio: " + notas[i][3]);
+
+        System.out.println("==========================================");
+        System.out.println("***********REPORTE CONTROL NOTAS**********");
+        System.out.println("==========================================");
+        
+        System.out.println("*************ALUMNOS APROBADOS************");
+        for (i = 0; i <cantidad; i++){
+            if (notas[i][3] >= 7 && notas[i][3] <= 10){
+                notas [i][4]= 1;
+            } if (notas [i][4] == 1){
+                System.out.println(" "+alumnos[i][0] + " " + alumnos[i][1] + " Nota 1: " + (notas[i][0]) + " Nota 2: " + (notas[i][1]) + " Nota 3: " + (notas[i][2]) + " Promedio: " + (notas[i][3]));
             }
         }
-
-        for (i  = 0;i< cantidad ;i++) {
-                if (notas[i][3] >= 8 && notas[i][3] <= 10) {
-                System.out.println("************CALIFICACIONES MAS ALTAS************");
-                System.out.println(" " + alumnos[i][0] + " " + alumnos[i][1] + " Promedio: " + notas[i][3]);
-            } else if (notas[i][3] >= 0 && notas[i][3] <= 4) {
-                System.out.println("************CALIFICACIONES MAS BAJAS************");
-                System.out.println(" " + alumnos[i][0] + " " + alumnos[i][1] + " Promedio: " + notas[i][3]);
+        
+        System.out.println("************ALUMNOS REPROBADOS************");
+        for (i = 0; i <cantidad; i++){
+            if (notas[i][3] >= 0 && notas[i][3] < 7){
+                notas [i][5]= 2;
+            } if (notas [i][5] == 2){
+                System.out.println(" "+alumnos[i][0] + " " + alumnos[i][1] + " Nota 1: " + (notas[i][0]) + " Nota 2: " + (notas[i][1]) + " Nota 3: " + (notas[i][2]) + " Promedio: " + (notas[i][3]));
+            }
+        }
+        
+        System.out.println("**************NOTAS MAS ALTAS*************");
+        for (i = 0; i <cantidad; i++){
+            if (notas[i][3] >= 8 && notas[i][3] <= 10){
+                notas [i][6]= 3;
+            } if (notas [i][6] == 3){
+                System.out.println(" "+alumnos[i][0] + " " + alumnos[i][1] + " Promedio: " + (notas[i][3]));                
+            }
+        }
+        
+        System.out.println("**************NOTAS MAS BAJAS*************");
+        for (i = 0; i <cantidad; i++){
+            if (notas[i][3] >= 0 && notas[i][3] <= 4){
+                notas [i][7]= 4;
+            } if (notas [i][7] == 4){
+                System.out.println(" "+alumnos[i][0] + " " + alumnos[i][1] + " Promedio: " + (notas[i][3]));                
             }
         }
     }
