@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <title>Cronometro</title>
+</head>
+
+<body>
+    <h1>Cronometro</h1>
+    <div id="cronometro">
+        <div class="tiempo" id="Horas">00</div>
+        <div class="tiempo" id="Minutos">:00</div>
+        <div class="tiempo" id="Segundos">:00</div>
+        <div class="tiempo" id="Centecimas">:00</div>
+        <input type="button" class="botones" id="iniciar" value="Iniciar &#9658;" onclick="iniciar();">
+        <input type="button" class="botones" id="parar" value="Pausar &#8718;" onclick="parar();" disabled>
+        <input type="button" class="botones" id="continuar" value="Continuar &#8634;" onclick="iniciar();" disabled>
+        <input type="button" class="botones" id="reiniciar" value="Reiniciar &#8635;" onclick="reiniciar();" disabled>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

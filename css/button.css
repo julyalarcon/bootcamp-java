@@ -1,0 +1,39 @@
+input{
+    color: white;
+    width: 150 px;
+    height: 40 px;
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px -1px 1px gray;
+
+}
+
+#iniciar{
+    background-color: #3aad02;
+}
+
+#parar{
+    background-color: rgb(160, 0, 0);
+}
+
+#continuar{
+    background-color: #1000f1;
+}
+
+#reiniciar{
+    background-color: orange ;
+}
+
+
+.botones:hover{
+    box-shadow: 0px 0px 15px #666;
+}
+
+.botones:active {
+    background-color: #baebbb;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

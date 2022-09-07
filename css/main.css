@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+h1{
+    font-family: 'Rock Salt', cursive;
+    padding: 10px;
+    color: white;
+}
+
+#cronometro{
+    margin: 10px auto;
+    width: 600px;
+    height: 120px;
+}
+
+
+.tiempo{
+    float: left;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
