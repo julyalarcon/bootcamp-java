@@ -1,0 +1,51 @@
+table {
+	font-family: sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+	margin: auto;
+}
+
+th {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: black;
+	background-color: #E91E63;
+}
+
+tr th:hover{
+	background-color: black;
+	color: #E91E63;
+}
+
+#busquedaLink{
+	color: black;
+	text-decoration: none;
+}
+
+#busquedaLink:hover{
+	color: fuchsia;
+}
+
+tr, th{
+	border: 5px solid white;
+}
+
+tr:nth-child(even) {
+	background-color: blue;
+}
+
+tr:nth-child(odd) {
+	background-color: aqua;
+	color: silver; 
+}
+
+tr:hover{
+	background-color: #F8BBD0 ;
+	color: fuchsia;
+	font-weight: bold;
+}
+
+section {
+	text-align: center;
+}

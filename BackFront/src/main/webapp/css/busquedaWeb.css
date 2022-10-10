@@ -1,0 +1,15 @@
+body {
+	background-color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+h1, a{
+	color: fuchsia;
+	align-items: center;
+	justify-content: center;
+}
+
+#busquedaURL:hover, #busquedaTexto:hover{
+	color: silver;	
+}

@@ -1,0 +1,22 @@
+button {
+	font-family: sans-serif;
+	padding-top: 15px;
+	padding-bottom: 15 px;
+	width: 12%;
+	height: 12%;
+	text-align: center;
+	background-color: fuchsia;
+	border: 5px solid aqua;
+}
+
+button:hover {
+	background-color: lime;
+	color: aqua;
+}
+
+nav button a {
+	color: black;
+	text-decoration: none;
+	font-size: x-large;
+	font-weight: bold;
+}

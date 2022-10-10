@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+	color: fuchsia;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 100px;
+}
+
+#formulario{
+	margin-top: 8%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 80%);
+	gap: 10%;
+}	
+
+#busquedaTexto{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+#busquedaTexto, #busquedaURL{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border: 3px solid purple;
+	border-radius: 4px;
+}
+
+#botonBusqueda{
+	box-sizing: border-box;
+	width: 200%;
+	height: 200%;
+	border: 6px solid purple;
+	border-radius: 7px;
+	align-content: center;
+	
+}
+
+#busquedaURL{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+#botonBusqueda:hover{
+	box-sizing: border-box;
+	width: 200%;
+	height: 200%;
+	font-weight: bold;
+	border-color: purple;
+	background-color: #F8BBD0;
+}
+
+#historialBusqueda{
+	margin-top: 5%;
+	color: blue;
+	text-decoration-line: none;
+}
+
+#historialCompletoBusquedas{
+	text-align: center;
+	
+}

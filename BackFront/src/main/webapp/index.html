@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Busqueda</title>
+<link rel="stylesheet" href="css/main.css" >
+</head>
+
+<body>
+<h1>Bienvenido al buscador</h1>
+<nav>
+<div id="historialCompletoBusquedas">
+	<a id="historialBusqueda" href="historialBusqueda.jsp">Historial de Busquedas</a>
+</div>
+</nav>
+
+<form action="validacion" method="post" id="formulario" >
+	<input type="text" name="busquedaTexto" id="busquedaTexto" placeholder="Buscar Texto" required>
+	<input type="text" name="busquedaURL" id="busquedaURL" placeholder="Url del sitio" required >
+	<input type="submit" name="botonBusqueda" id="botonBusqueda" value="Buscar" >
+</form>
+
+</body>
+</html>
