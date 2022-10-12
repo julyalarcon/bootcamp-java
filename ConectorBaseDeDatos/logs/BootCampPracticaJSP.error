@@ -1,0 +1,2 @@
+2022-10-12 12:26:50.226 ERROR  -com.protalento.jdbc.implementaciones.EmpleadoImplementacion.buscarPorID(EmpleadoImplementacion.java:63) - java.sql.SQLTransientConnectionException: (conn=12) Parameter at position 2 is not set
+2022-10-12 12:26:50.352 ERROR  -com.protalento.jdbc.implementaciones.EmpleadoImplementacion.eliminar(EmpleadoImplementacion.java:141) - java.sql.SQLTransientConnectionException: (conn=14) Parameter at position 2 is not set
